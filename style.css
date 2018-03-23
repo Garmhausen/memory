@@ -11,6 +11,14 @@ html, body {
   width: 100vw;
 }
 
+span {
+  margin-bottom: 20px;
+}
+
+select {
+  margin-bottom: 20px;
+}
+
 textarea {
   margin-bottom: 20px;
 }
