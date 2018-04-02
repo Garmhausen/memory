@@ -11,26 +11,16 @@ html, body {
   width: 100vw;
 }
 
-span {
-  margin-bottom: 20px;
-}
-
-select {
-  margin-bottom: 20px;
-}
-
 textarea {
   margin-bottom: 20px;
+  outline: none !important;
+  border: solid 2px;
 }
 
-button {
-  margin-bottom: 20px;
+.valid {
+  border-color: green;
 }
 
-.correct {
-  background-color: forestgreen;
-}
-
-.incorrect {
-  background-color: firebrick;
+.invalid {
+  border-color: red;
 }

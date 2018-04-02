@@ -8,15 +8,9 @@
   <body>
     <main>
       <div class="input-wrapper">
-        <span>What is Pi?</span>
-        <select>
-          <option value="one">100 digits</option>
-          <option value="two">200 digits</option>
-          <option value="three">300 digits</option>
-        </select>
-        <textarea></textarea>
-        <button>Check Answer</button>
-        <div id="answer"></div>
+        <span>What is Pi? (300 digits max)</span>
+        <textarea rows="20" cols="20" autofocus></textarea>
+        <div class="digits-count">Correct sequential digits: <span id="count"></span></div>
       </div>
     </main>
     <script src="main.js"></script>
