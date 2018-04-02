@@ -12,7 +12,10 @@ elem.input.addEventListener('keyup', event => {
   if (guess.length > 0) {
     if (check(guess)) {
       processCorrect();
-      elem.count.innerText = guess.length;
+      elem.count.innerText = guess.length - 2;
+      if (guess.length < 3) {
+        elem.count.innerText = 0;
+      }
     } else {
       processIncorrect();
     }
@@ -50,32 +53,3 @@ function clearInput() {
   classList.contains('valid') ? classList.remove('valid') : null;
   elem.count.innerText = 0;
 }
-
-// buttonElem.addEventListener('click', function() {
-//   var guess = guessElem.value;
-//   if (check(guess)) {
-//     answerElem.innerHTML = `
-//       <span>Correct!</span>
-//     `;
-//   } else {
-//     answerElem.innerHTML = `
-//       <span>Incorrect!</span>
-//     `;
-//   }
-// });
-
-// function check(str) {
-//   switch (selectElem.value) {
-//     case 'one':
-//       return (str === piOne);
-//       break;
-//     case 'two':
-//       return (str === piTwo);
-//       break;
-//     case 'three':
-//       return (str === piThree);
-//       break;
-//     default:
-//       break;
-//   }
-// }
